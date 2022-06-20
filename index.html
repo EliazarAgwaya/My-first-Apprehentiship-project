@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first Apprehentice project</title>
+    <!-- <script src="./assets/main.js"></script> -->
+    
+</head>
+<body>
+    <h1 id="head">Hello World</h1>
+    <form id="myForm" >
+        <input type="text"  id="myInput" placeholder="my name">
+        <input type="button" value="Click me" id="btn">
+    </form>
+    <script>
+        const btn=document.getElementById("btn")
+        const input=document.getElementById("myInput").innerHTML
+        console.log(input)
+        btn.addEventListener("click", (e)=>{
+            e.preventDefault()
+            alert `Hello ${input}, welcome to the bootcamp`
+        })
+     </script>
+</body>
+</html>
