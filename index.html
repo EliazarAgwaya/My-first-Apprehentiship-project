@@ -10,17 +10,9 @@
 <body>
     <h1 id="head">Hello World</h1>
     <form id="myForm" >
-        <input type="text"  id="myInput" placeholder="my name">
+        <input type="text" placeholder="my name">
         <input type="button" value="Click me" id="btn">
     </form>
-    <script>
-        const btn=document.getElementById("btn")
-        const input=document.getElementById("myInput").innerHTML
-        console.log(input)
-        btn.addEventListener("click", (e)=>{
-            e.preventDefault()
-            alert `Hello ${input}, welcome to the bootcamp`
-        })
-     </script>
+    <script src="./assets/main.js"></script>
 </body>
 </html>
